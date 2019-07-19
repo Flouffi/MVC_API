@@ -1,0 +1,27 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', type="text/css" href='styles.css')
+  body
+    each planete in message 
+        h1=planete.nom
+        hr
+        p.donnee='Diamètre en km'
+        br
+        p=planete.diametre
+        br
+        p.donnee='Température moyenne en Celcius'
+        br
+        p=planete.temperature
+        br
+        p.donnee='Masse'
+        br
+        p=planete.masse
+        br
+        p.donnee='Révolution en jour'
+        br
+        p=planete.revolution
+        br
+        img(src=planete.photo)
+        hr
+        
